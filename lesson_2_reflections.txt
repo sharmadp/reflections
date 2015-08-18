@@ -27,8 +27,26 @@ main branch
 
 How do the diagrams help you visualize the branch structure?
 
+With diagrams it helps us understand the commits reachable from that branch. 
+It will help not to have commits that are not reachable from the branch. It helps 
+plan the merging process.
+
 What is the result of merging two branches together? Why do we represent it in
 the diagram the way we do?
 
-What are the pros and cons of Gitâ€™s automatic merging vs. always doing merges
+The coins feature is now introduced to master branch. By moving master to the merged 
+commit we will be able to trace all the commits in coins branch and therefore we 
+can remove the coins branch now.
+
+What are the pros and cons of Git's automatic merging vs. always doing merges
 manually?
+
+Automatic 
+
+pros: helps save time
+cons: May merge things and introduce bugs.
+
+Manual
+
+cons: It will be time consuming to do trivial work which a machine can do
+pros: it will never introduce errors in merging on its own
